@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Nav from './components/Nav';
-import About from './components/About';
-import ContactForm from './components/Contact';
+import Page from './components/Page';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('/');
+  useEffect(() => {
+    document.title = currentPage;
+  }, [currentPage]);
+
   return (
     <div>
-      <Header></Header>
-      <Nav></Nav>
-      <main>
-        <About></About>
-        <ContactForm></ContactForm>
-      </main>
+      <Header>
+        <Nav setCurrentPage={setCurrentPage}></Nav>
+      </Header>
+
+      <Page currentPage={currentPage}></Page>
     </div>
   );
 }

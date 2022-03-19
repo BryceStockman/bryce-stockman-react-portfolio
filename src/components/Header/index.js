@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Header() {
+function Header(props) {
   return (
     <header>
       <h2>
         <a href="/">Bryce Stockman Web Development & Marketing</a>
       </h2>
+      {props.children}
     </header>
   );
 }

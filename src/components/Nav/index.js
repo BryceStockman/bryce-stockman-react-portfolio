@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Nav() {
+function Nav(props) {
+  const { setCurrentPage } = props;
+
   return (
     <nav>
       <ul>
-        <li>About Me</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-        <li>Resume</li>
+        <li key="about">
+          <span onClick={() => setCurrentPage('about')}>About Me</span>
+        </li>
+        <li key="project">
+          <span onClick={() => setCurrentPage('project')}>Projects</span>
+        </li>
+        <li key="contact">
+          <span onClick={() => setCurrentPage('contact')}>Contact</span>
+        </li>
+        <li key="resume">
+          <span onClick={() => setCurrentPage('resume')}>Resume</span>
+        </li>
       </ul>
     </nav>
   );
