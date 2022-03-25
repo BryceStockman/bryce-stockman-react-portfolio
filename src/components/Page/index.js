@@ -4,25 +4,9 @@ import ContactForm from '../Contact';
 import Project from '../Project';
 
 function Page(props) {
-  const {
-    currentPage
-  } = props;
-  // useEffect isn't getting hit
-  // useEffect(() => {
-  //   setCurrentPage(document.title);
-  // }, [currentPage]);
+  const { currentPage } = props;
 
   const switchPage = () => {
-    console.log(currentPage);
-    // if (document.title === 'about') {
-    //   return <About />;
-    // } else if (document.title === 'contact') {
-    //   return <ContactForm />;
-    // } else if (document.title === 'project') {
-    //   return <Project />;
-    // } else {
-    //   return <About />;
-    // }
     switch (currentPage) {
       case 'about':
         return <About />;
@@ -37,7 +21,7 @@ function Page(props) {
     }
   };
 
-  return <section>{switchPage()}</section>;
+  return <main>{switchPage()}</main>;
 }
 
 export default Page;

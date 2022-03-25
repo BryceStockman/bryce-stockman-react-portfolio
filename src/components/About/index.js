@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import profileIcon from '../../assets/images/profile-icon-large.png';
 
 function About() {
   return (
-    <section>
-      <h1 id="about">About Me</h1>
-      <img src={profileIcon} alt="profile icon" />
-      <p>
+    <section className="container">
+      <h1 id="about" className="my-2">
+        About Me
+      </h1>
+      <img src={profileIcon} alt="profile icon" className="my-2" />
+      <p className="my-2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Tempus egestas sed
         sed risus. Integer enim neque volutpat ac tincidunt. Vel quam elementum
