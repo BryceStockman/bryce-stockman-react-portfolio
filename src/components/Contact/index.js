@@ -36,11 +36,12 @@ function ContactForm() {
   };
 
   return (
-    <section>
+    <section className="container">
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
+          <br></br>
           <input
             type="text"
             name="name"
@@ -50,6 +51,7 @@ function ContactForm() {
         </div>
         <div>
           <label htmlFor="email">Email address:</label>
+          <br></br>
           <input
             type="email"
             name="email"
@@ -59,6 +61,7 @@ function ContactForm() {
         </div>
         <div>
           <label htmlFor="message">Message:</label>
+          <br></br>
           <textarea
             name="message"
             rows="5"

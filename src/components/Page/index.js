@@ -2,6 +2,7 @@ import React from 'react';
 import About from '../About';
 import ContactForm from '../Contact';
 import Project from '../Project';
+import Resume from '../Resume';
 
 function Page(props) {
   const { currentPage } = props;
@@ -14,8 +15,8 @@ function Page(props) {
         return <ContactForm />;
       case 'project':
         return <Project />;
-      // case 'resume':
-      // return <Resume />
+      case 'resume':
+        return <Resume />;
       default:
         return <ContactForm />;
     }
