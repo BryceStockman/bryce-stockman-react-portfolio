@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ecc277a0.css",
+    "main.js": "/static/js/main.1c7767ab.js",
+    "static/js/787.bbf616ea.chunk.js": "/static/js/787.bbf616ea.chunk.js",
+    "static/media/run-buddy-website.jpg": "/static/media/run-buddy-website.9b2c8387d485b670f97d.jpg",
+    "index.html": "/index.html",
+    "main.ecc277a0.css.map": "/static/css/main.ecc277a0.css.map",
+    "main.1c7767ab.js.map": "/static/js/main.1c7767ab.js.map",
+    "787.bbf616ea.chunk.js.map": "/static/js/787.bbf616ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecc277a0.css",
+    "static/js/main.1c7767ab.js"
+  ]
+}
